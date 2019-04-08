@@ -1,0 +1,119 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Robot, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #78ACCD;
+}
+
+.container {
+	width: 400px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.header,
+.content,
+.footer {
+	padding: 20px;
+	font-size: 14px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #DEDEDE;
+	color: #7D8994;
+}
+
+table {
+	margin: auto;
+	width: 365px;
+	text-align: center;
+	font-size: 12px;
+}
+
+table th {
+	text-transform: uppercase;
+	color: #7D8994;
+}
+
+table tr {
+	height: 30px;
+}
+
+.past {
+	color: #E7E2E1;
+}
+
+.hol,
+.note_1,
+.note_2 {
+	position: relative;
+	z-index: 100;
+}
+
+.hol::before,
+.note_1::before,
+.note_2::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #DE6E46;
+	top: 0px;
+	left: 9px;
+}
+
+.hol::before {
+	content: "7";
+	padding-top: 4px;
+	background-color: #DE6E46;
+	z-index: 0;
+	color: white;
+}
+
+.note_2::before {
+	border-color: #AE5989;
+}
+
+.note_1::after,
+.note_2::after {
+	content: "6";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #DE6E46;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	top: -5px;
+	right: 5px;
+}
+
+.note_2::after {
+	background-color: #AE5989;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #DEDEDE;
+	font-size: 12px;
+	color: #6E859B;
+}
+
+.note_1.plus::after {
+	display: none;
+}
+
+.note_1.plus::before {
+	top: -8px;
+	left: -11px;
+}

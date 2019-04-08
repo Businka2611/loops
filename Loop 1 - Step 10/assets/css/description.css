@@ -1,0 +1,25 @@
+.description {
+	width: 400px;
+	font-size: 12px;
+	color: #a8a8a7;
+}
+
+.footer.description_text {
+	color: white;
+}
+
+.footer.description_text h1 {
+	color: white;
+}
+
+.description_text h1 {
+	font-size: 26px;
+	color: black;
+}
+
+.description_text p {
+	padding-left: 30px;
+	border-left: 1.5px solid #929291;
+	margin-bottom: 30px;
+	line-height: 20px;
+}

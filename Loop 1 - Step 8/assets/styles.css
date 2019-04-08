@@ -1,0 +1,169 @@
+body {
+	background-color: #f4e5df;
+	margin: 0;
+	font-family: Robot, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 900px;
+	background-color: white;
+	margin: auto;
+	margin-top: 50px;
+	-webkit-box-shadow: 0px 40px 23px -22px rgba(201,146,122,0.61);
+	-moz-box-shadow: 0px 40px 23px -22px rgba(201,146,122,0.61);
+	box-shadow: 0px 40px 23px -22px rgba(201,146,122,0.61);
+	display: flex;
+}
+
+.aside {
+	height: 510px;
+	width: 430px;
+	background: url(img/background.jpg) no-repeat;
+	background-size: contain;
+	padding: 40px;
+	padding-left: 60px;
+}
+
+.nav a {
+	line-height: 0;
+	text-transform: uppercase;
+	color: #898988;
+	display: block;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+.nav a:hover {
+	color: black;
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.aside .nav {
+	position: relative;
+}
+
+.aside .nav::before {
+	content: "";
+	position: absolute;
+	background: url("img/arrow-back.svg") no-repeat;
+	background-size: contain;
+	width: 17px;
+	height: 20px;
+	top: -8px;
+	left: -20px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 40px;
+}
+
+.main .nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main .nav a {
+	margin-left: 20px;
+}
+
+.content {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.header {
+	font-family: "Playfair+Display", serif;
+	margin-bottom: 60px;
+}
+
+.header h1 {
+	font-size: 60px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	position: relative;
+}
+
+.header h1::after {
+	content: "\2014";
+	font-size: 100px;
+	line-height: 0;
+	position: absolute;
+	bottom: 40px;
+	right: 0;
+}
+
+.header p {
+	line-height: 0;
+	font-size: 18px;
+}
+
+.gallery {
+	display: flex;
+	align-items: flex-start;
+}
+
+.photo {
+	width: 160px;
+	height: 100px;
+	background: url(img/play.svg) no-repeat 50% 50%,
+				url(img/preview.jpg) no-repeat;
+	background-size: 10%, contain;
+	position: relative;
+}
+
+.photo::after {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	opacity: 0.5;
+	background-color: white;
+	top: 33px;
+	left: 63px;
+}
+
+.photo:hover {
+	cursor: pointer;
+}
+
+.gallery_items {
+	margin-right: 40px;
+}
+
+.gallery_items p {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	position: relative;
+}
+
+.gallery_items p:hover {
+	cursor: pointer;
+}
+
+.gallery_items p::after {
+	content: "";
+	position: absolute;
+	background: url("img/arrow-forward.svg") no-repeat;
+	background-size: contain;
+	width: 17px;
+	height: 20px;
+	top: -1px;
+	right: 45px;
+}
+
+.description p {
+	margin-top: 0;
+	font-size: 14px;
+	letter-spacing: 0.3px;
+	line-height: 24px;
+}

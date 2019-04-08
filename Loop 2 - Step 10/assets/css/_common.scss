@@ -1,0 +1,73 @@
+$color: #5EB5E6;
+$ff: Roboto, sans-serif;
+$fz: 14px;
+$fw: 300;
+$fwb: $fw * 2 + 100;
+$width: 1000px;
+$height: 100px;
+$wrapper-offset: 20px;
+
+*, *::after, *::before, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: $fw;
+}
+
+body {
+  background-color: lighten($color, 33%);
+  font-family: $ff;
+  font-size: $fz;
+}
+
+h1, h2 {
+  font-size: $fz + 2;
+  font-weight: $fwb;
+}
+
+h2 {
+  font-size: $fz + 1;
+}
+
+h4 {
+  font-size: $fz - 1;
+  color: grey;
+  font-weight: $fw - 100;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.small img {
+  width: 40px;
+}
+
+.big img {
+  width: 80px;
+}
+
+img {
+  max-width: 120px;
+}
+
+i {
+  display: inline-block;
+}
+
+.photo, .photo img {
+  border-radius: 50%;
+}
+
+.wrapper {
+  width: $width;
+  margin: auto;
+  display: flex;
+}
+

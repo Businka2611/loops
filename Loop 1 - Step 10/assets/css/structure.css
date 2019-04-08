@@ -1,0 +1,41 @@
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	font-family: Roboto, sans-serif;
+}
+
+.section:first-child {
+	border-bottom: 1px solid #dfdfde;
+	background: url(../img/watches.jpg) no-repeat 110% 100%;
+	background-size: 350px;
+	padding-bottom: 60px;
+}
+
+.section:nth-child(3) {
+	background: url(../img/runners.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	height: 100%;
+}
+
+.section_inner {
+	width: 800px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.section_inner.bg {
+	padding-bottom: 100px;
+	background: url(../img/preview.jpg) no-repeat 100% 100%;
+	background-size: 300px;
+	margin-bottom: 30px;
+}
+
+.section_inner.footer {
+	display: flex;
+	flex-direction: row-reverse;
+}

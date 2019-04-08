@@ -1,0 +1,176 @@
+body {
+	height: 100%;
+	background-color: #C4D3De;
+	background: linear-gradient(to bottom, #c5d4e0, #7f9fbb) no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	font-family: Robot, sans-serif;
+}
+
+.container {
+	margin: auto;
+	width: 400px;
+	background-color: white;
+	margin-top: 70px;
+}
+
+header {
+	background-color: #5883ca;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 40px;
+	padding-right: 20px;
+	position: relative;
+	height: 60px;
+}
+
+header::before {
+	content: "";
+	background-color: white;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	position: absolute;
+	top: 27px;
+	left: 25px;
+}
+
+.name {
+	width: 100%;
+}
+
+header img {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+header img:hover {
+	opacity: 1;
+	transition: 0.5s ease-in-out;
+}
+
+.day {
+	text-align: center;
+	text-transform: uppercase;
+	color: #d5d9db;
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+	margin: auto; 
+	position: relative;
+}
+
+.day::before {
+	content: "";
+	width: 37%;
+	height: 1px;
+	background-color: #d5d9db;
+	position: absolute;
+	top: 5px;
+	left: 25px;
+}
+
+.day::after {
+	content: "";
+	width: 37%;
+	height: 1px;
+	background-color: #d5d9db;
+	position: absolute;
+	top: 5px;
+	right: 25px;
+}
+
+section {
+	padding-left: 25px;
+	padding-right: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+section p {
+	margin: 5px;
+}
+
+.outcome_time,
+.income_time {
+	color: #989999;
+	font-size: 12px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.income_time {
+	text-align: right;
+}
+
+.income_message,
+.outcome_message,
+.blocked_message {
+	padding: 10px;
+	margin-bottom: 20px;
+	max-width: 250px;
+	display: inline-block;
+	font-size: 13px;
+	border-radius: 0 4px 4px 4px;
+	position: relative;
+}
+
+.income_message {
+	background-color: #ededec;
+	align-self: flex-end;
+}
+
+.income_message::after {
+	content: "";
+	position: absolute;
+	border: 5px solid transparent; border-left: 5px solid #ededec; border-top: 5px solid #ededec;
+	top: 0;
+	right: -7px;
+}
+
+.outcome_message {
+	background-color: #e0f8f0;
+}
+
+.outcome_message::before {
+	content: "";
+	position: absolute;
+	border: 5px solid transparent; border-top: 5px solid #e0f8f0; border-right: 5px solid #e0f8f0;
+	top: 0;
+	left: -7px;
+}
+
+
+.blocked_message {
+	background-color: #f4b8b1;
+	align-self: flex-end;
+}
+
+footer {
+	padding: 25px;
+	padding-top: 0;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #d5d9db;
+	padding-top: 20px;
+}
+
+input {
+	border: none;
+	background-color: transparent;
+}
+
+input~#send {
+	text-transform: uppercase;
+	color: #5883ca;
+	font-weight: bold;
+	cursor: pointer;
+}

@@ -1,0 +1,140 @@
+.header {
+  background-color: #fff;
+  margin-bottom: $wrapper-offset;
+  .container {
+    border-bottom: 1px solid lightgray;
+
+    .header-up,
+    .header-up > .nav > ul,
+    .header-down,
+    .header-down > ul,
+    .notifications > ul
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-down > ul {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.header-up {
+  .box {
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px solid lightgray;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .logo, .avatar {
+    width: ($width / 20) * 1;
+    display: flex;
+    justify-content: flex-start;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .search-field,
+  .notifications {
+    width: ($width / 20) * 3;
+  }
+
+  .search-field {
+    position: relative;
+    input {
+      border: 1px solid lightgray;
+      border-radius: 20px;
+      padding: 5px;
+      width: 120px;
+    }
+
+      &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url("../img/search.png") no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+      }
+  }
+
+  .nav {
+    width: ($width / 20) * 12;
+
+    ul>li {
+      margin-right: 50px;
+      position: relative;
+
+      &:hover{
+        top: -2px;
+        transition: 1s;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        a {
+          color: #FF6F5E;
+        }
+      }
+    }
+  }
+
+  .notifications {
+    ul>li {
+      margin-right: 20px;
+      position: relative;
+
+      &:hover{
+        top: -2px;
+        transition: 1s;
+      }
+
+      &:first-child a{
+        color: #2BCD71;
+      }
+      
+      &:nth-child(2) a{
+        color: #ECB80C;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        a {
+          color: #8B43A4;
+        }
+      }
+    }
+  }
+
+  .avatar {
+    justify-content: flex-end;
+  }
+}
+
+.header-down {
+  height: $height / 2;
+  ul>li {
+    line-height: 0;
+    margin-right: 20px;
+    padding: 20px;
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 2px 0 0 $color;
+      transition: 0.2s;
+    }
+
+    &.active {
+      box-shadow: 0 2px 0 0 $color;
+    }
+  }
+}

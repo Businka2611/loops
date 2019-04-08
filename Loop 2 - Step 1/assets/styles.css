@@ -1,0 +1,153 @@
+body {
+	background-color: #dd8582;
+	margin: 0;
+	font-family: Robot, sans-serif;
+	padding: 0;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+	overflow: visible;
+	margin-top: 90px;
+	position: relative;
+}
+
+.programms {
+	font-size: 52px;
+	text-transform: uppercase;
+	width: 2000px;
+	display: flex;
+	color: rgba(255, 255, 255, 0.6);
+
+}
+
+.programms p {
+	margin: 0;
+	margin-right: 50px;
+	font-weight: 700;
+	line-height: 0;
+}
+
+.programms p:hover {
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+
+.active {
+	color: white;
+}
+
+.header {
+	margin-top: 50px;
+	margin-bottom: 65px;
+}
+
+.header p {
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.content {
+	display: flex;
+}
+
+.feature {
+	width: 266px;
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+	padding-left: 40px;
+	position: relative;
+}
+
+.feature:first-child {
+	background-color: #393636;
+}
+
+.feature:nth-child(2) {
+	background-color: #2f2d2d;
+}
+
+.feature:nth-child(3) {
+	background-color: #1e1c1b;
+}
+
+p.determination {
+	color: #eeb6ae;
+	font-size: 18px;
+	margin: 0;
+}
+
+p.value {
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.feature:first-child::before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255);
+	position: absolute;
+	top: 0;
+	left: -100px;
+	opacity: 0.3;
+}
+
+.feature:first-child::after {
+	content: "";
+	border: 7px solid transparent;
+	border-right: 7px solid rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 43px;
+	left: -60px;
+}
+
+.feature:nth-child(3)::before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255);
+	position: absolute;
+	top: 0;
+	right: -100px;
+	opacity: 0.3;
+}
+
+.feature:nth-child(3)::after {
+	content: "";
+	border: 7px solid transparent;
+	border-left: 7px solid rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 43px;
+	right: -60px;
+}
+
+.feature:first-child:hover::before,
+.feature:nth-child(3):hover::before {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.start_btn input {
+	border: none;
+	background-color: #131312;
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 70px;
+	font-weight: bold;
+	border-radius: 4px;
+	position: absolute;
+	bottom: -25px;
+	left: 15px;
+}
+
+.start_btn input:hover {
+	cursor: pointer;
+	bottom: -23px;
+	transition: 0.2s;
+}

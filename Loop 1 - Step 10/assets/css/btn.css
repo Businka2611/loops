@@ -1,0 +1,14 @@
+.submit_btn input {
+	border: none;
+	background-color: #ea625c;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 10px;
+	letter-spacing: 0.5px;
+}
+
+.submit_btn input:hover {
+	cursor: pointer;
+	background-color: #d54c44;
+}
